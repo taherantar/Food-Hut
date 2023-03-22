@@ -645,3 +645,23 @@ body {
 .copyright .fa-heart {
   color: red;
 }
+/* **************************** */
+
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  max-width: 30px;
+  width: 100%;
+  text-align: center;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: rgb(100,100,100);
+  padding: 3.5px 2rem;
+    border-radius: 4px;
+    color: #fff;
+
+}
+#myBtn:hover {
+  background-color: #7dbbf1;
+  color: #fff;
+
+}
