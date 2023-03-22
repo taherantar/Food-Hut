@@ -375,12 +375,7 @@ body {
   }
   .book-table .table {
     position: absolute;
-  }
-  .book-table img {
-    height: 100%;
-  }
-  .book-table {
-    height: 600px;
+    height: 400px;
   }
 }
 /* *******************EVENTS******************** */
