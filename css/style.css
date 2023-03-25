@@ -469,7 +469,13 @@ body {
     font-size: 1.5rem;
   }
   .event h5 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .event .btn button:first-child {
+    padding: 0.5rem 2.8rem;
+  }
+  .event .btn button:last-child {
+    padding: 0.5rem 2.8rem;
   }
 }
 /* **************************REVIEWS****************** */
@@ -548,6 +554,9 @@ body {
   .reviews .cards h3 {
     margin-top: 25px;
   }
+  .reviews .cards .content {
+    width: 80%;
+}
 }
 /* **********Find Us************ */
 .find-us {
@@ -647,21 +656,13 @@ body {
 }
 /* **************************** */
 
-#myBtn {
+.top {
+  --offset: 50px;
   position: fixed;
-  bottom: 10px;
-  max-width: 30px;
-  width: 100%;
-  text-align: center;
-  border-color: rgba(85, 85, 85, 0.2);
-  background-color: rgb(100,100,100);
-  padding: 3.5px 2rem;
-    border-radius: 4px;
-    color: #fff;
-
-}
-#myBtn:hover {
-  background-color: #7dbbf1;
+  bottom: 20px;
+  padding: 10px 15px;
   color: #fff;
-
+  background: #ff214f;
+  border-radius: 100px;
+  margin-left: 30px;
 }
