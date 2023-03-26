@@ -25,6 +25,7 @@ h6 {
   line-height: 1.2;
   color: var(--text-color);
 }
+
 /* ************************TODO ******************************* */
 .float {
   float: left;
@@ -62,14 +63,17 @@ body {
   position: absolute;
   width: 98%;
 }
+
 .brand {
   width: 10%;
   align-items: center;
 }
+
 .content .navbar ul {
   display: flex;
   list-style: none;
 }
+
 .content .nav-link {
   padding-right: 20px;
   text-transform: capitalize;
@@ -78,9 +82,11 @@ body {
   font-weight: 700;
   font-size: 1.1rem;
 }
+
 .navbar .nav-item .active {
   color: #ff214f;
 }
+
 .navbar .nav-item a:hover {
   color: #ff214f;
 }
@@ -90,6 +96,7 @@ body {
   background: url(../images/main.jpg);
   background-size: cover;
 }
+
 .header .overlay {
   height: 100%;
   background: rgba(33, 37, 41, 0.85);
@@ -98,21 +105,25 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .content button {
   padding: 10px;
   background-color: var(--button-background);
   margin-top: -11px;
   border-radius: 5px;
 }
+
 .header h1 {
   font-size: 6rem;
   font-weight: 700;
 }
+
 .header h2 {
   font-size: 4rem;
   font-weight: 500;
   margin: 0;
 }
+
 .header button {
   padding: 15px 25px;
   background-color: var(--button-background);
@@ -120,27 +131,37 @@ body {
   margin-top: 20px;
   border-radius: 5px;
 }
+
 .header a {
   color: #ffffff;
   text-transform: capitalize;
   text-decoration: none;
 }
+
+.fa-bars {
+  display: none
+}
+
 @media (max-width: 850px) {
   .header h1 {
     font-size: 2.5rem;
   }
+
   .header h2 {
     font-size: 1.5rem;
   }
+
   .header button {
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 5px;
   }
+
   .header .overlay {
     justify-content: flex-end;
     padding-bottom: 10%;
   }
+
   .content .navbar ul {
     display: flex;
     list-style: none;
@@ -152,16 +173,32 @@ body {
   .brand {
     display: none;
   }
+
   .containar .content {
     display: block;
   }
+
   .content button {
     margin-top: 11px;
   }
+
   .content .nav-item {
     margin-bottom: 10px;
   }
+
+  .fa-bars {
+    display: block
+  }
+
+  .fa-bars~* {
+    display: none;
+  }
+
+  .fa-bars:hover~*:not(.brand) {
+    display: block;
+  }
 }
+
 /* ******************About****************** */
 .about-section {
   display: flex;
@@ -171,9 +208,11 @@ body {
   background-color: #343a40;
   width: 50%;
 }
+
 .about-section .about-img {
   width: 50%;
 }
+
 .about-section .about-img img {
   width: 100%;
   height: 100%;
@@ -187,34 +226,41 @@ body {
   margin-top: 20%;
   line-height: 1.8rem;
 }
+
 .content .description h2 {
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: 100;
 }
+
 @media (max-width: 1100px) {
   .about-section {
     display: flex;
     flex-direction: column;
   }
+
   .content .description {
     width: 90%;
   }
+
   .about-section .about-img,
   .about-section .content {
     width: 100%;
     margin-top: -10px;
   }
+
   .content .description h2,
   p {
     text-align: center;
   }
 }
+
 /******************************Titel-menu***********************************/
 .titel-menu {
   min-height: 300px;
   background-color: #343a40;
 }
+
 .titel-menu h2 {
   text-align: center;
   line-height: 300px;
@@ -224,6 +270,7 @@ body {
   margin: 0;
   font-weight: 400;
 }
+
 /*****************************************items-food******************************************/
 .image-gallery {
   display: flex;
@@ -232,7 +279,7 @@ body {
   margin: 0;
 }
 
-.image-gallery > li {
+.image-gallery>li {
   flex-basis: 25%;
   list-style-type: none;
 }
@@ -248,35 +295,44 @@ body {
   .image-gallery {
     width: 100%;
   }
-  .image-gallery > li {
+
+  .image-gallery>li {
     flex-basis: 33.3%;
   }
+
   .image-gallery li img {
     max-width: 100%;
   }
 }
+
 @media (max-width: 700px) {
   .image-gallery {
     width: 100%;
   }
-  .image-gallery > li {
+
+  .image-gallery>li {
     flex-basis: 50%;
   }
+
   .image-gallery li img {
     max-width: 100%;
   }
 }
+
 @media (max-width: 500px) {
   .image-gallery {
     width: 100%;
   }
-  .image-gallery > li {
+
+  .image-gallery>li {
     flex-basis: 100%;
   }
+
   .image-gallery li img {
     max-width: 100%;
   }
 }
+
 /* ************Book Table ***********************/
 /* .book-table {
   height: 350px;
@@ -298,6 +354,7 @@ body {
   background: url(../images/book-table-img.jpg);
   background-size: cover;
 }
+
 .book-table .overlay {
   background: rgb(33 37 41 / 66%);
   display: flex;
@@ -312,11 +369,13 @@ body {
   width: 100%;
   z-index: -1;
 }
+
 .input-table {
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
+
 .book-table h2 {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -324,6 +383,7 @@ body {
   text-align: center;
   margin-bottom: 7%;
 }
+
 .book-table .form-control {
   background: 0 0;
   color: #fff;
@@ -331,9 +391,11 @@ body {
   font-size: 1.25rem;
   padding: 0.5rem;
 }
+
 .book-table .table {
   width: 100%;
 }
+
 .book-table .btn {
   width: 100%;
   display: flex;
@@ -352,14 +414,17 @@ body {
   border-color: #ff214f;
   text-transform: uppercase;
 }
+
 .book-table button:hover {
   border-color: #fff;
   background-color: #fff;
   color: #ff214f;
 }
+
 .book-table input::placeholder {
   color: #fff;
 }
+
 @media (max-width: 950px) {
   .book-table .table .input-table {
     display: flex;
@@ -367,23 +432,29 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .book-table .table .form-control {
     margin: 10px;
   }
+
   .book-table .btn {
     margin: 0;
   }
+
   .book-table .table {
     position: absolute;
   }
+
   .book-table {
     height: 550px;
   }
 }
+
 /* *******************EVENTS******************** */
 .event {
   background-color: #343a40;
 }
+
 .event h5 {
   margin: 0;
   font-size: 3rem;
@@ -392,19 +463,23 @@ body {
   text-align: center;
   padding-top: 7%;
 }
+
 .event .cards {
   display: flex;
   justify-content: space-evenly;
   padding-top: 5%;
 }
+
 .event img {
   width: 100%;
 }
+
 .event .btn {
   display: flex;
   justify-content: center;
   padding-top: 7%;
 }
+
 .event .btn button:first-child {
   padding: 0.5rem 4.8rem;
   font-size: 1.25rem;
@@ -415,6 +490,7 @@ body {
   border-color: #ff214f;
   text-transform: capitalize;
 }
+
 .event .btn button:last-child {
   padding: 0.5rem 4.8rem;
   font-size: 1.25rem;
@@ -425,15 +501,19 @@ body {
   text-transform: capitalize;
   border-color: transparent;
 }
+
 .event .btn button:last-child:hover {
-  background-color: #fff;
-  color: #343a40;
+  background-color: #ff214f;
+  color: #FFF;
 }
+
 .event .card {
-  flex-basis: 31%;
+  width: 31%;
+  margin: 10px;
   border: 1px solid #524e4e;
   text-align: center;
 }
+
 .event .card span {
   background-color: #ff214f;
   color: #fff;
@@ -446,16 +526,19 @@ body {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
 .event .cards .card .content {
   margin-top: 20px;
   padding: 2rem;
   color: #fff;
 }
+
 .event .cards .card .content h4 {
   text-transform: capitalize;
   font-size: 1.5rem;
   font-weight: 400;
 }
+
 @media (max-width: 820px) {
   .event .cards {
     display: flex;
@@ -468,21 +551,30 @@ body {
   .event .cards .card .content h4 {
     font-size: 1.5rem;
   }
+
   .event h5 {
     font-size: 1.5rem;
   }
+
   .event .btn button:first-child {
     padding: 0.5rem 2.8rem;
   }
+
   .event .btn button:last-child {
     padding: 0.5rem 2.8rem;
   }
+
+  .event .card {
+    width: 40%;
+  }
 }
+
 /* **************************REVIEWS****************** */
 .reviews {
   background-color: #343a40;
   padding-bottom: 40px;
 }
+
 .reviews h2 {
   margin: 0;
   font-size: 4rem;
@@ -491,10 +583,12 @@ body {
   text-align: center;
   padding-top: 65px;
 }
+
 .reviews .cards {
   display: flex;
   justify-content: space-around;
 }
+
 .reviews .cards .desc {
   text-align: center;
   padding: 1rem;
@@ -507,12 +601,14 @@ body {
   position: relative;
   font-size: 1.1rem;
 }
+
 .reviews .cards h3 {
   font-size: 1.8rem;
   text-transform: capitalize;
   text-align: center;
   font-weight: 400;
 }
+
 .reviews .cards h6 {
   font-size: 0.8rem;
   text-transform: capitalize;
@@ -521,6 +617,7 @@ body {
   opacity: 0.8;
   margin: 14px;
 }
+
 .reviews .cards .content {
   flex-basis: 31%;
 }
@@ -543,6 +640,7 @@ body {
   -ms-transform: rotate(45deg) translateX(-50%);
   -o-transform: rotate(45deg) translateX(-50%);
 }
+
 @media (max-width: 820px) {
   .reviews .cards {
     display: flex;
@@ -551,13 +649,16 @@ body {
     align-items: center;
     background-color: #343a40;
   }
+
   .reviews .cards h3 {
     margin-top: 25px;
   }
+
   .reviews .cards .content {
     width: 80%;
+  }
 }
-}
+
 /* **********Find Us************ */
 .find-us {
   display: flex;
@@ -567,19 +668,23 @@ body {
   border: 2px solid #495057;
   width: 100%;
 }
+
 .find-us .map,
 .find-text {
   flex-basis: 50%;
 }
+
 .find-text {
   color: #fff;
   padding: 30px;
 }
+
 .find-us h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 .find-us p {
   line-height: 1.8rem;
   width: 95%;
@@ -591,19 +696,23 @@ body {
 .fa-envelope:before {
   margin-right: 10px;
 }
+
 .address {
   color: #adb5bd;
 }
+
 @media (max-width: 950px) {
   .find-us {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
+
   .find-text {
     text-align: center;
   }
 }
+
 /* **************************conacts*************** */
 .contacts {
   background-color: #343a40;
@@ -611,6 +720,7 @@ body {
   height: 300px;
   justify-content: space-evenly;
 }
+
 .contacts .content {
   display: flex;
   flex-direction: column;
@@ -618,26 +728,31 @@ body {
   align-items: center;
   width: calc(100% / 3);
 }
+
 .contacts .content h4 {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 .contacts .content h6 {
   color: #adb5bd;
   margin: 5px;
   font-size: 0.8rem;
 }
+
 @media (max-width: 950px) {
   .contacts {
     display: flex;
     flex-direction: column;
   }
+
   .contacts .content {
     text-align: center;
     width: 100%;
   }
 }
+
 /* ***********************copyright************************** */
 .copyright {
   background-color: #343a40;
@@ -647,13 +762,16 @@ body {
   color: #adb5bd;
   line-height: 100px;
 }
+
 .copyright a {
   background-color: transparent;
   color: #ff0000cf;
 }
+
 .copyright .fa-heart {
   color: red;
 }
+
 /* **************************** */
 
 .top {
